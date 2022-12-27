@@ -146,38 +146,38 @@
                 <div class="team-item">
                   <h3 class="name">Ігор Дем'яненко</h3>
                   <p lang="en" class="jod-title">Product Designer</p>
-                  <ul class="icon-block">
-                    <li class="list-link">
-                      <a href="" class="link-icon">
-                        <svg class="soc-icon">
-                          <use href="./images/symbol-defs.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="list-link">
-                      <a href="" class="link-icon">
-                        <svg class="soc-icon">
-                          <use href="./images/symbol-defs.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="list-link">
-                      <a href="" class="link-icon">
-                        <svg class="soc-icon">
-                          <use href="./images/symbol-defs.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="list-link">
-                      <a href="" class="link-icon">
-                        <svg class="soc-icon">
-                          <use href="./images/symbol-defs.svg#linkedin"></use>
-                        </svg>
-                      </a> 
-                    </li>
-                  </ul>
-                </li>
-                      
+                    <ul class="icon-block">
+                      <li class="list-link">
+                        <a href="" class="link-icon">
+                          <svg class="soc-icon">
+                            <use href="./images/symbol-defs.svg#instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="list-link">
+                        <a href="" class="link-icon">
+                          <svg class="soc-icon">
+                            <use href="./images/symbol-defs.svg#twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="list-link">
+                        <a href="" class="link-icon">
+                          <svg class="soc-icon">
+                            <use href="./images/symbol-defs.svg#facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="list-link">
+                        <a href="" class="link-icon">
+                          <svg class="soc-icon">
+                            <use href="./images/symbol-defs.svg#linkedin"></use>
+                          </svg>
+                        </a> 
+                      </li>
+                    </ul>
+                  </div>         
+              </li>
                     
               <li class="item">
                 <img 
@@ -218,8 +218,9 @@
                       </a> 
                     </li>
                   </ul>
-                </li>
-    
+                </div>         
+              </li>
+
               <li class="item">
                 <img                   
                   src="./images/marketing.jpg"
@@ -259,8 +260,9 @@
                       </a> 
                     </li>
                   </ul>
-                </li>
-
+                </div>         
+              </li>
+              
               <li class="item">
                 <img                   
                   src="./images/uidesigner.jpg"
@@ -300,8 +302,10 @@
                         </a> 
                       </li>
                     </ul>
-                  </li>
-            </ul>
+                  </div>         
+                </li>
+              </ul>
+            </div>
           </section>
           <section class="section">
             <div class="conteiner">
@@ -350,9 +354,8 @@
                 </a>
               </li>
             </ul>
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
   
       <!--футер-->
@@ -368,7 +371,7 @@
               </ul>
             </address>
           </div>
-          <div join-in-icon>
+          <div class="join-in-icon">
             <p class="join-in-text">приєднуйтесь</p>
             <ul class="join-in-block">
               <li class="list-link">
@@ -403,17 +406,17 @@
           </div>
           <form class="connection">
             <p class="join-in-text">Підпишіться на розсилку</p>
-              <label class="connection-label">
-              <input type="email" name="email" class="connection-input" placeholder="E-mail">
-              </label>
-              <button type="submit" class="connection-button">Підписатися
-                <svg class="send">
-                  <use href="./images/symbol-defs.svg#send"></use>
-                </svg>
-              </button>
+              <div class="connection-box">
+                <label class="connection-label">
+                  <input type="email" name="email" class="connection-input" placeholder="E-mail">
+                  </label>
+                  <button type="submit" class="connection-button">Підписатися
+                    <svg class="send">
+                      <use href="./images/symbol-defs.svg#send"></use>
+                    </svg>
+                  </button>
+              </div>
             </form>
-
-          </div>
         </div>
       </footer>
       <div class="backdrop is-hidden" data-modal>
@@ -423,7 +426,7 @@
             <p class="text-form">Залиште свої дані, ми вам передзвонимо</p>
             <div class="form-field">
               <label for="name" class="name-label">Ім'я</label>
-                <input type="name" name="name" id="name" class="form-input">
+                <input type="text" name="username" id="name" class="form-input">
                 <svg class="icon-label">
                   <use href="./images/symbol-defs.svg#person-black"></use>
                 </svg>
@@ -442,14 +445,18 @@
                   <use href="./images/symbol-defs.svg#email-black"></use>
                 </svg>
             </div>
-            <div class="form-field">
+            <div class="form-field__textarea">
               <label for="textarea" class="name-label">Коментар</label>
               <textarea name="textarea" id="textarea" rows="10" placeholder="Введіть текст"></textarea>
             </div>
             <label class="conditions">
               
               <input type="checkbox" class="checkbox" name="checkbox">
-              <span class="new-checkbox"></span>
+              <span class="new-checkbox">
+                <svg class="icon-checkbox">
+                  <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </span>
               Погоджуюся з розсилкою та приймаю <a href="" class="contract">Умови договору</a>
             </label>
 
