@@ -358,18 +358,7 @@ textarea {
     text-align: center;
 }
 
-.conditions {
-    display: flex;
-    align-items: center;
-    color: #757575;
-    width: 423px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
 
-    font-size: 14px;
-    line-height: 1.71;
-}
 .contract {
     color: #2196F3;
     text-decoration-line: underline;
@@ -406,17 +395,33 @@ textarea {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-right: 7px;
-    
 }
-.checkbox:checked + .new-checkbox {
+.conditions {
     display: flex;
+    align-items: center;
+    color: #757575;
+    width: 423px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.conditions:focus > .new-checkbox,
+.conditions:hover > .new-checkbox { 
+    background-color: #2196F3;
+    border: 0px solid #2196F3;
+}
+
+.checkbox:checked + .new-checkbox {
     align-items: center;
     justify-content: center;    
     background-color: #2196F3;
     background-size: contain;
-    /* background-origin: border-box;
-     */
-     border: 0px solid #2196F3;
+    border: 0px solid #2196F3;
 }
 .icon-checkbox {
         fill:currentColor
