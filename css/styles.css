@@ -415,10 +415,9 @@ textarea {
     line-height: 1.71;
 }
 
-.conditions:focus > .new-checkbox,
+.conditions:focus-within > .new-checkbox,
 .conditions:hover > .new-checkbox { 
-    background-color: #2196F3;
-    border: 0px solid #2196F3;
+    border: 1px solid #2196F3;
 }
 
 .checkbox:checked + .new-checkbox {
